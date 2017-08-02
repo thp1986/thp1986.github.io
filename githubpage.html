@@ -1,0 +1,70 @@
+
+
+
+<head> 
+<link href="/img/favicon.ico" type="image/x-icon" rel="icon" />
+</head>
+<html>
+<header><title>UQGEC Dashboard</title></header>
+
+<head>
+<link rel="stylesheet" type="text/css" href="/css/main_dashboard.css">
+<head> 
+</head>
+
+
+</head>
+<body>
+Geotechnical Engineering Center Online Monitoring Dashboard
+    <table style="width:90%" border="1">
+      <tr>
+        <th>Project name</th>
+        <th>location</th> 
+        <th>Description</th>
+        <th>Last update</th>
+      </tr>
+      <tr>
+        <td><a href="/column_aster">Column Aster</a> </td>
+        <td>Geolab 1st Floor</td> 
+        <td>Flanged column filled with Samarco Slime</td>
+        <td><span class="jsValue_aster">retrieving</span></td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Past Monitoring Results</b></td> 
+      </tr>
+      <tr>
+        <td><a href="/area51_redmud">Area51_redmud</a></td>
+        <td>Geolab 1st floor</td> 
+        <td>Calibrating sensors in redmud</td>
+        <td><span class="jsValue_area51_redmud">retrieving</span></td>
+      </tr>
+      <tr>
+        <td><a href="/area51">Area51_coal tailings</a></td>
+        <td>Geolab 1st floor</td> 
+        <td>Calibrating sensors in coaltailings</td>
+        <td><span class="jsValue_coal_tailings">retrieving</span></td>
+      </tr>
+    </table>
+</body>
+<head>
+<!--
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="last_update.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100716506-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+</html>
