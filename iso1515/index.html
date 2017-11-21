@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <!--
 https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f
 -->
@@ -41,15 +41,34 @@ https://stackoverflow.com/questions/220273/use-css-to-reorder-divs
     </div>  
 
     <div id="blockGraph">
+      <p style="font-size:20px">The historical snapshot can be found from <a href="https://outbox.eait.uq.edu.au/uqczhan2/aster/">here</a>
+            <p style="font-size:25px">Real-time results </p>
+            <p style="font-size:20px">Click on the buttons inside the tabbed menu:</p>
 
-<!--      <p style="font-size:20px">The historical snapshot can be found from <a href="https://outbox.eait.uq.edu.au/uqczhan2/photo_roof1">here</a>     -->
-      <p style="font-size:25px">Real-time results </p>
-      <script type="text/javascript" src="siexp_hhu_plot.js"> </script>
-      <!--script type="text/javascript" src="tab.js"> </script-->
-    </div>   <!-- div for blockgraph --> 
-    <div id="blockFooter">
-    </div>
+    
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">Last 10 days</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Last 30 days</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">All time</button>
+            </div>
 
-<div>
+            <div id="London" class="tabcontent">  <!-- style="display:block">-->
+                <h3>Last 10 days</h3>
+                <p>--</p>
+            </div>
+            <div id="Paris" class="tabcontent">
+                <h3>Last 30 days</h3>
+                <p>--</p> 
+            </div> 
+            <div id="Tokyo" class="tabcontent">
+                <h3>All Time</h3>
+                <p>--</p>
+            </div><!-- div for tokyo --> 
+            <script type="text/javascript" src="tab.js"> </script>
+        </div>   <!-- div for blockgraph --> 
 
+        <div id="blockFooter">
+            <p><img src="/img/gec_footer.png" style="max-width:100%;"  >   </p>  
+        </div> <!--blockfooter-->  
+    </div> <!--blockcontainer-->  
 </body>
