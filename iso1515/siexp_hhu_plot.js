@@ -25,7 +25,7 @@ function data_treatment_siexp_hhu(d) {
 
    };
    
-//get_data_and_plot(data_sensor,public_key,grf_2,{treatment_func:data_treatment})
+get_data_and_plot(data_sensor,public_key,grf_2,{})
 
 
 
