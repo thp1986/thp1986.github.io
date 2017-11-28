@@ -1,49 +1,131 @@
-<head> 
-<link href="/img/favicon.ico" type="image/x-icon" rel="icon" />
-</head>
-<html>
-<header><title>SI experiment - salinity and temperature combined effect</title></header>
+<!DOCTYPE html>
+
+<!--
+
+https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f
+
+-->
+
+<meta charset="utf-8">
+
+<header><title> F1515 </title></header>
+
+
+
+<!-- http://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error -->
 
 <head>
-<link rel="stylesheet" type="text/css" href="/css/main_dashboard.css">
-<head> 
-</head>
 
+<link rel="stylesheet" type="text/css" href="plot_page.css">
 
 </head>
+
 <body>
-Online Monitoring Dashboard
-    <table style="width:90%" border="1">
+
+
+
+<!-- load the d3.js library -->    
+
+<!-- EXTERNAL LIBS-->
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script type="text/javascript" src="siexp_hhu_plot.js"> </script>
+
+<!-- a container with the headlines and descreptions
+
+http://bl.ocks.org/Matthew-Weber/5645518
+
+https://stackoverflow.com/questions/220273/use-css-to-reorder-divs
+
+ -->    
+
+<div id="blockContainer">
+
+    <div id="blockTitle">
+
+      <table style="width:100%" border="0">
+
       <tr>
-        <th>Project name</th>
-        <th>location</th> 
-        <th>Description</th>
-        <th>Last update</th>
+
+       <th><p id="headline" class="hed" style="font-size:30px"> Seawater intrusion: combined effect of temperature and salinity <p>
+
+       <p id="headline" class="hed" style="font-size:24px"> Experiments at Hohai University - Nanjing - China <p> </th>
+
+       <th><img src="UQ.jpg"  align="right" style="width:400px;height:122px;"></p></th>
+
       </tr>
-      <tr>
-        <td><a href="/iso1515/index.html">Non-isothermal Tf = 15</a> </td>
-        <td> - </td> 
-        <td>Temperature of freshwater is fixed at 15C</td>
-        <td><span class="non15">retrieving</span></td>
-      </tr>
-      <tr>
-        <td><a href="/noniso1505">Non-isothermal Tf = 10</a> </td>
-        <td> - </td> 
-        <td>Temperature of freshwater is fixed at 10C</td>
-        <td><span class="non10">retrieving</span></td>
-      </tr>	  
-      <tr>
-        <td><a href="/tide"> Tide effect </a> </td>
-        <td> - </td> 
-        <td>Effect of tide factors (amplitude and period)</td>
-        <td><span class="tide">retrieving</span></td>
-      </tr>	  	  
-        <td><a href="/tide"> Seasonal variation of seawater temperature </a> </td>
-        <td> - </td> 
-        <td>Seasonal variation of seawater temperature</td>
-        <td><span class="season">retrieving</span></td>
-      </tr>	  	  	  
-    </table>
+
+      </table>  
+
+    </div>
+
+    <div id="blockDescription">
+
+      <p class="dek" style="font-size:25px"> CASE 1: </p> 
+
+      <p class="dek" style="font-size:17px"> Flux control freshwater boundary - Ts = 15C; Tf = 15C </p>
+
+      <!--br>---&gt; ...
+
+      <br>---&gt; ... -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="get_data_and_plot.js"> </script>
+
+    </div>  
+
+
+
+    <div id="blockGraph">
+
+      <!-- p style="font-size:20px">The historical snapshot can be found from <a href="https://outbox.eait.uq.edu.au/uqczhan2/aster/">here</a>
+
+            <p style="font-size:25px">Real-time results </p>
+
+            <p style="font-size:20px">Click on the buttons inside the tabbed menu:</p-->
+
+            <div class="tab">
+
+                <button class="tablinks" onclick="openCity(event, 'London')">Last 10 days</button>
+
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Last 30 days</button>
+
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">All time</button>
+
+            </div>
+
+
+
+            <div id="London" class="tabcontent">  <!-- style="display:block">-->
+
+                <h3>Last 10 days</h3>
+
+                <p>--</p>
+
+            </div>
+
+            <div id="Paris" class="tabcontent">
+
+                <h3>Last 30 days</h3>
+
+                <p>--</p> 
+
+            </div> 
+
+            <div id="Tokyo" class="tabcontent">
+
+                <h3>All Time</h3>
+
+                <p>--</p>
+
+            </div><!-- div for tokyo --> 
+
+            <script type="text/javascript" src="tabs.js"> </script>
+
+        </div>   <!-- div for blockgraph --> 
+
+    </div> <!--blockcontainer-->  
+
 </body>
-<head>
-</html>
