@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f
+-->
+<meta charset="utf-8">
+<header><title> VF1515 </title></header>
+<!-- http://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error -->
+<head>
+<link rel="stylesheet" type="text/css" href="/css/plot_page.css">
+</head>
+<body>
+<!-- load the d3.js library -->    
+<!-- EXTERNAL LIBS-->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="/src/siexp_hhu_plot.js"> </script>
+<!-- a container with the headlines and descreptions
+http://bl.ocks.org/Matthew-Weber/5645518
+https://stackoverflow.com/questions/220273/use-css-to-reorder-divs
+ -->    
+<div id="blockContainer">
+    <div id="blockTitle">
+      <table style="width:100%" border="0">
+      <tr>
+       <th><p id="headline" class="hed" style="font-size:30px"> Seawater intrusion: combined effect of temperature and salinity <p>
+       <p id="headline" class="hed" style="font-size:24px"> Experiments at Hohai University - Nanjing - China <p> </th>
+       <th><img src="/UQ.jpg"  align="right" style="width:400px;height:122px;"></p></th>
+      </tr>
+      </table>  
+    </div>
+    <div id="blockDescription">
+      <p class="dek" style="font-size:25px"> CASE: FV1515 </p> 
+      <p class="dek" style="font-size:20px"> <br> Vertical seawater boundary - Flux control freshwater boundary </br>
+	  <p class="dek" style="font-size:25px"> -&gt; Tf = 15C </p> 
+	  <p class="dek" style="font-size:25px"> -&gt; Ts = 15C </p> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/src/get_data_and_plot.js"> </script>
+    </div>  
+    <div id="blockGraph">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">Last 10 days</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Last 30 days</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">All time</button>
+            </div>
+            <div id="London" class="tabcontent">  <!-- style="display:block">-->
+                <h3>Last 10 days</h3>
+                <p>--</p>
+            </div>
+            <div id="Paris" class="tabcontent">
+                <h3>Last 30 days</h3>
+                <p>--</p> 
+            </div> 
+            <div id="Tokyo" class="tabcontent">
+                <h3>All Time</h3>
+                <p>--</p>
+            </div><!-- div for tokyo --> 
+            <script type="text/javascript" src="/src/tabs.js"> </script>
+        </div>   <!-- div for blockgraph --> 
+    </div> <!--blockcontainer-->  
+</body>
