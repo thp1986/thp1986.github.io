@@ -2,8 +2,8 @@
 
 
 // this following things are also successful
-var $jsValue_aster= document.querySelector('.jsValue_aster');
-var public_aster='w5nEnw974mswgrx0ALOE';
+var $VF1525= document.querySelector('.VF1525');
+var public_key='AkaxkpVrezuv2Epe46r3T062dEk';
 
 var $jsValue_bougainvillea= document.querySelector('.jsValue_bougainvillea');
 var public_bougainvillea='J4g8nMZrV9TDyqX31x5L';
@@ -82,7 +82,7 @@ function get_the_latest_json(input,public_key)
     var offset = new Date().getTimezoneOffset();
        
     $.ajax({
-          url:'https://data.sparkfun.com/output/'+public_key+'.json',
+          url:'http://144.6.225.24:8080/output/'+public_key+'.json',
           //data:{page:1,sample:1,limit:1}, // working, getting the latest one! 2017-06-05 11:03
           data:{limit:1}, 
           //async: false,  // https://stackoverflow.com/questions/1478295/what-does-async-false-do-in-jquery-ajax
@@ -157,7 +157,7 @@ function get_the_latest_json(input,public_key)
 ////
 //function2($jsValue4.innerHTML,get_the_latest_json())
 
-get_the_latest_json($jsValue_aster,public_aster)
+get_the_latest_json($VF1525,public_key)
 get_the_latest_json($jsValue_bougainvillea,public_bougainvillea)
 get_the_latest_json($jsValue_camellia,public_camellia)
 get_the_latest_json($jsValue_daisy,public_daisy)
