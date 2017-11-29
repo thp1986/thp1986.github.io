@@ -170,7 +170,7 @@ function get_data_and_plot(data_sensor,public_key,grf,options)
 
     //console.log(arg.time_out, arg.retry_limit , arg.data_size, arg.sw_plot )
     var offset = new Date().getTimezoneOffset(); 
-    var relurl = 'http://144.6.225.24:8080/streams/YZ4yk0xd6qS4MrOkgBYJFm9mVPB';	    
+    var relurl = 'http://144.6.225.24:8080/streams/AkaxkpVrezuv2Epe46r3T062dEk.json';	    
     $.ajax({
           //url = 'https://144.6.225.24:8080/streams/'+public_key+'.json';
 	  url:relurl,
