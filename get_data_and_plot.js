@@ -171,7 +171,7 @@ function get_data_and_plot(data_sensor,public_key,grf,options)
     //console.log(arg.time_out, arg.retry_limit , arg.data_size, arg.sw_plot )
     var offset = new Date().getTimezoneOffset();     
     $.ajax({
-          url = 'http://144.6.225.24:8080/output/'+public_key+'.json',
+          url:'http://144.6.225.24:8080/output/'+public_key+'.json',
           //data:{page:1,sample:1,limit:1}, // working, getting the latest one! 2017-06-05 11:03
           //data:{limit:1},
           data:arg.data_size,
