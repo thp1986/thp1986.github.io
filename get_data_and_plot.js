@@ -177,7 +177,8 @@ function get_data_and_plot(data_sensor,public_key,grf,options)
           data:arg.data_size,
           //async: false,  // https://stackoverflow.com/questions/1478295/what-does-async-false-do-in-jque
           async: false,  // https://stackoverflow.com/questions/1478295/what-does-async-false-do-in-jquery
-          dataType:'jsonp',
+          dataType:'text',
+	  //dataType:'jsonp',
           tryCount : 0,
           retryLimit :arg.retry_limit,
           timeout: arg.time_out ,
