@@ -171,14 +171,13 @@ function get_data_and_plot(data_sensor,public_key,grf,options)
     //console.log(arg.time_out, arg.retry_limit , arg.data_size, arg.sw_plot )
     var offset = new Date().getTimezoneOffset();     
     $.ajax({
-          url = 'http://144.6.225.24:8080/streams/'+public_key+'.json';
+          url = 'http://144.6.225.24:8080/streams/'+public_key+'.jsonp';
           //data:{page:1,sample:1,limit:1}, // working, getting the latest one! 2017-06-05 11:03
           //data:{limit:1},
           data:arg.data_size,
           //async: false,  // https://stackoverflow.com/questions/1478295/what-does-async-false-do-in-jque
           async: false,  // https://stackoverflow.com/questions/1478295/what-does-async-false-do-in-jquery
-          dataType:'text',
-	  //dataType:'jsonp',
+          dataType:'jsonp',
           tryCount : 0,
           retryLimit :arg.retry_limit,
           timeout: arg.time_out ,
