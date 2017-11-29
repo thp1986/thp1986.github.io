@@ -2,34 +2,10 @@
 
 
 // this following things are also successful
-var $VF1525= document.querySelector('.VF1525');
+var $VF1515= document.querySelector('.VF1515');
 var public_key='AkaxkpVrezuv2Epe46r3T062dEk';
 
-var $jsValue_bougainvillea= document.querySelector('.jsValue_bougainvillea');
-var public_bougainvillea='J4g8nMZrV9TDyqX31x5L';
-
-var $jsValue_camellia= document.querySelector('.jsValue_camellia');
-var public_camellia='q5YnK9A9qMCqoNqv78XD';
-
-
-var $jsValue_daisy= document.querySelector('.jsValue_daisy');
-var public_daisy='RMxqjA6nRXfbm01raooM';
-
-var $jsValue_area51_redmud= document.querySelector('.jsValue_area51_redmud');
-var public_area51_redmud='21mmonra90TYXlx9KL4J';
-
-var $jsValue_concrete_curing= document.querySelector('.jsValue_concrete_curing');
-var public_concrete_curing='jwDYgo7DnmtdRDboA0nQ';
-
-var $jsValue_compacted_redmud= document.querySelector('.jsValue_compacted_redmud');
-var public_compacted_redmud='Vpr5RDVV3VTagYD9L196';
-
-var $jsValue_coal_tailings= document.querySelector('.jsValue_coal_tailings');
-var public_coal_tailings='9J2rX3QZ94s5RJ9LjrbN';
-
 var data_sensor;
-
-
 
 function millisecondsToStr (milliseconds) {
     // TIP: to find current time in milliseconds, use:
@@ -157,14 +133,7 @@ function get_the_latest_json(input,public_key)
 ////
 //function2($jsValue4.innerHTML,get_the_latest_json())
 
-get_the_latest_json($VF1525,public_key)
-get_the_latest_json($jsValue_bougainvillea,public_bougainvillea)
-get_the_latest_json($jsValue_camellia,public_camellia)
-get_the_latest_json($jsValue_daisy,public_daisy)
-get_the_latest_json($jsValue_area51_redmud,public_area51_redmud)
-get_the_latest_json($jsValue_concrete_curing,public_concrete_curing)
-get_the_latest_json($jsValue_coal_tailings,public_coal_tailings)
-get_the_latest_json($jsValue_compacted_redmud,public_compacted_redmud)
+get_the_latest_json($VF1515,public_key)
 //get_the_latest_json($jsValue5,'RMxqjA6nRXfbm01raooM')
 //      $jsValue4.innerHTML =50
 //get_the_latest_json().done(function (d){
