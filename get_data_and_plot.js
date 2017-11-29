@@ -169,9 +169,11 @@ function get_data_and_plot(data_sensor,public_key,grf,options)
     arg.plot_location =options.plot_location || 'body'
 
     //console.log(arg.time_out, arg.retry_limit , arg.data_size, arg.sw_plot )
-    var offset = new Date().getTimezoneOffset();
+    var offset = new Date().getTimezoneOffset(); 
+    var relurl = 'https://144.6.225.24:8080/streams/YZ4yk0xd6qS4MrOkgBYJFm9mVPB.json';	    
     $.ajax({
-          url:'http://144.6.225.24:8080/streams/'+public_key+'.json',
+          //url = 'https://144.6.225.24:8080/streams/'+public_key+'.json';
+	  url:relurl,
           //data:{page:1,sample:1,limit:1}, // working, getting the latest one! 2017-06-05 11:03
           //data:{limit:1},
           data:arg.data_size,
