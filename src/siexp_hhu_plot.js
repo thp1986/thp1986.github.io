@@ -10,7 +10,7 @@ var margin = {top: 40, right: 100, bottom: 100, left: 110},
 // ---------------------below is data definition for the temperature----------------------
 temp1={};
 temp1.key=["tp101", "tp102", "tp103", "tp104", "tp105", "tp106"]
-temp1.ylim=[20,30];
+temp1.ylim=[5,26];
 temp1.xlabel="TIME";
 temp1.ylabel="TEMPERATURE (CELSIUS)";
 temp1.color = d3.scaleOrdinal(d3.schemeCategory10);
