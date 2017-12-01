@@ -76,7 +76,7 @@ var data_siexp_hhu1;
 public_key1='AkaxkpVrezuv2Epe46r3T062dEk';
 grf_siexp_hhu1={temp1,temp2,temp3,temp4}
 
-var data_siexp_hhu;
+var data_siexp_hhu2;
 public_key2='q1d0jGxYXDclBKBmxKlDC2aXV1O';
 grf_siexp_hhu2={temp5,temp6,temp7,temp8,temp9}
 
