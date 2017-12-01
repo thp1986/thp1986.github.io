@@ -10,14 +10,14 @@ var margin = {top: 40, right: 100, bottom: 100, left: 110},
 // ---------------------below is data definition for the temperature----------------------
 temp1={};
 temp1.key=["tp101", "tp102", "tp103", "tp104", "tp105", "tp106"]
-temp1.ylim=[5,26];
+temp1.ylim=[0,20];
 temp1.xlabel="TIME";
 temp1.ylabel="TEMPERATURE (CELSIUS)";
 temp1.color = d3.scaleOrdinal(d3.schemeCategory10);
 //
 temp2={};
 temp2.key=["tp201", "tp202", "tp203", "tp204", "tp205", "tp206", "tp207", "tp208", "tp209"]
-temp2.ylim=[0,40];
+temp2.ylim=[0,20];
 temp2.xlabel="TIME";
 temp2.ylabel="TEMPERATURE (CELSIUS)";
 temp2.color = d3.scaleOrdinal(d3.schemeCategory10);
@@ -38,7 +38,7 @@ temp4.color = d3.scaleOrdinal(d3.schemeCategory10);
 //
 temp5={};
 temp5.key=["tp501", "tp502", "tp503", "tp504", "tp505"]
-temp5.ylim=[0,40];
+temp5.ylim=[0,20];
 temp5.xlabel="TIME";
 temp5.ylabel="TEMPERATURE (CELSIUS)";
 temp5.color = d3.scaleOrdinal(d3.schemeCategory10);
