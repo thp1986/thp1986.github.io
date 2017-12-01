@@ -74,7 +74,10 @@ temp9.color = d3.scaleOrdinal(d3.schemeCategory10);
 //
 var data_siexp_hhu;
 public_key1='AkaxkpVrezuv2Epe46r3T062dEk';
-grf_siexp_hhu={temp1,temp2,temp3,temp4,temp5,temp6,temp7,temp8,temp9}
+grf_siexp_hhu1={temp1,temp2,temp3,temp4,temp5,temp6,temp7,temp8,temp9}
+
+public_key2='q1d0jGxYXDclBKBmxKlDC2aXV1O';
+grf_siexp_hhu2={temp5,temp6,temp7,temp8,temp9}
 
 // ----------------------below is to obtain the data from the sensors------------------------------
 
