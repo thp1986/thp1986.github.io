@@ -71,7 +71,7 @@ function openCity(evt, cityName) {
 // https://stackoverflow.com/questions/38099670/tabs-in-html-select-first-tab-by-default
 
 document.getElementsByClassName('tablinks')[0].click()
-get_data_and_plot(data_siexp_hhu1,public_key1,grf_siexp_hhu1,{treatment_func:data_treatment_siexp_hhu,plot_location:'#London',data_size:{'gte' :{'timestamp' : 'now - 1 days'}}})
+//get_data_and_plot(data_siexp_hhu1,public_key1,grf_siexp_hhu1,{treatment_func:data_treatment_siexp_hhu,plot_location:'#London',data_size:{'gte' :{'timestamp' : 'now - 1 days'}}})
 get_data_and_plot(data_siexp_hhu2,public_key2,grf_siexp_hhu2,{treatment_func:data_treatment_siexp_hhu,plot_location:'#London',data_size:{'gte' :{'timestamp' : 'now - 1 days'}}})
 
 // select the second tab, which is a month result
@@ -81,13 +81,13 @@ get_data_and_plot(data_siexp_hhu2,public_key2,grf_siexp_hhu2,{treatment_func:dat
 // eq(1) means the second tab
 
 $( ".tablinks" ).eq(1).one( "click", function() {
-get_data_and_plot(data_siexp_hhu1,public_key1,grf_siexp_hhu1,{treatment_func:data_treatment_siexp_hhu,plot_location:'#Paris',data_size:{'gte' :{'timestamp' : 'now - 30 days'}}})
+//get_data_and_plot(data_siexp_hhu1,public_key1,grf_siexp_hhu1,{treatment_func:data_treatment_siexp_hhu,plot_location:'#Paris',data_size:{'gte' :{'timestamp' : 'now - 30 days'}}})
 });
 get_data_and_plot(data_siexp_hhu2,public_key2,grf_siexp_hhu2,{treatment_func:data_treatment_siexp_hhu,plot_location:'#Paris',data_size:{'gte' :{'timestamp' : 'now - 30 days'}}})
 });
 
 $( ".tablinks" ).eq(2).one( "click", function() {
-get_data_and_plot(data_siexp_hhu1,public_key1,grf_siexp_hhu1,{treatment_func:data_treatment_siexp_hhu,plot_location:'#Tokyo',data_size:{sample:2}})
+//get_data_and_plot(data_siexp_hhu1,public_key1,grf_siexp_hhu1,{treatment_func:data_treatment_siexp_hhu,plot_location:'#Tokyo',data_size:{sample:2}})
 });
 get_data_and_plot(data_siexp_hhu2,public_key2,grf_siexp_hhu2,{treatment_func:data_treatment_siexp_hhu,plot_location:'#Tokyo',data_size:{sample:2}})
 });
